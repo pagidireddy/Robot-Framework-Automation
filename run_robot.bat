@@ -1,0 +1,1 @@
+robot --outputdir Reports testCases\*.robot

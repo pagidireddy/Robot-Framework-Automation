@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-03-09T11:44:40.505171" rpa="false" schemaversion="5">
+<suite id="s1" name="BusesPageTest" source="C:\Users\Prasanth\PycharmProjects\robot\testCases\BusesPageTest.robot">
+<test id="s1-t1" name="Test Buses Tab" line="13">
+<kw name="Open The Browser" owner="KeyWords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:41.115440" level="INFO">Opening browser 'chrome' to base url 'https://www.makemytrip.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-09T11:44:41.115440" elapsed="4.444984"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-09T11:44:45.561422" elapsed="2.578463"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-09T11:44:49.141998" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-09T11:44:48.140884" elapsed="1.001114"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-03-09T11:44:41.114393" elapsed="8.027605"/>
+</kw>
+<kw name="Click on Buses" owner="KeyWords">
+<try>
+<branch type="TRY">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:54.314798" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-09T11:44:54.315796" level="FAIL">Element '//div[@id="webengage-notification-container"]/iframe' did not appear in 5 seconds.</msg>
+<arg>${IFRAME}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2024-03-09T11:44:49.142997" elapsed="5.173849">Element '//div[@id="webengage-notification-container"]/iframe' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<arg>${IFRAME}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="NOT RUN" start="2024-03-09T11:44:54.316846" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${IFRMCLOSEBUTTON}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-03-09T11:44:54.316846" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${IFRMCLOSEBUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-09T11:44:54.316846" elapsed="0.000998"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" start="2024-03-09T11:44:54.317844" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BUSESMENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-03-09T11:44:54.317844" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${BUSESMENU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-09T11:44:54.317844" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FROMCITY}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-03-09T11:44:54.317844" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-09T11:44:49.142997" elapsed="5.174847">Element '//div[@id="webengage-notification-container"]/iframe' did not appear in 5 seconds.</status>
+</branch>
+<branch type="EXCEPT">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BUSESMENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-09T11:44:54.317844" elapsed="0.022677"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:54.340521" level="INFO">Clicking element '//span[@class='chNavIcon appendBottom2 chSprite chBuses']'.</msg>
+<arg>${BUSESMENU}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:44:54.340521" elapsed="0.156026"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FROMCITY}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-09T11:44:54.496547" elapsed="0.234587"/>
+</kw>
+<status status="PASS" start="2024-03-09T11:44:54.317844" elapsed="0.413290"/>
+</branch>
+<status status="PASS" start="2024-03-09T11:44:49.142997" elapsed="5.588137"/>
+</try>
+<status status="PASS" start="2024-03-09T11:44:49.142997" elapsed="5.588137"/>
+</kw>
+<kw name="Enter City Names And Travel Date" owner="KeyWords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:54.733206" level="INFO">Clicking element '//span[normalize-space()='From']'.</msg>
+<arg>${FROMCITY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:44:54.732208" elapsed="0.119649"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FROMCITYBOX}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-09T11:44:54.851857" elapsed="0.440417"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:55.292274" level="INFO">Typing text 'Anantapur' into text field '//input[@placeholder='From']'.</msg>
+<arg>${FROMCITYBOX}</arg>
+<arg>${From}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:44:55.292274" elapsed="0.141786"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>SUGGESTIONS</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-09T11:44:55.434060" elapsed="0.101173"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//span[contains(@class, 'sr_city') and contains(text(), '${From}')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-09T11:44:55.535233" elapsed="0.638456"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:56.174688" level="INFO">Clicking element '//span[contains(@class, 'sr_city') and contains(text(), 'Anantapur')]'.</msg>
+<arg>//span[contains(@class, 'sr_city') and contains(text(), '${From}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:44:56.173689" elapsed="0.139985"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:56.314674" level="INFO">Clicking element '//input[@placeholder='To']'.</msg>
+<arg>${TOCITYBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:44:56.313674" elapsed="0.092971"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:56.407645" level="INFO">Typing text 'Chennai' into text field '//input[@placeholder='To']'.</msg>
+<arg>${TOCITYBOX}</arg>
+<arg>${To}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:44:56.406645" elapsed="0.105692"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>SUGGESTIONS</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-09T11:44:56.512337" elapsed="0.016956"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//span[contains(@class, 'sr_city') and contains(text(), '${To}')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-09T11:44:56.529293" elapsed="0.216282"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:56.745575" level="INFO">Clicking element '//span[contains(@class, 'sr_city') and contains(text(), 'Chennai')]'.</msg>
+<arg>//span[contains(@class, 'sr_city') and contains(text(), '${To}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:44:56.745575" elapsed="0.093702"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//div[@aria-label='${Date}']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-09T11:44:56.840345" elapsed="0.013295"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:56.854637" level="INFO">Clicking element '//div[@aria-label='Mon Mar 11 2024']'.</msg>
+<arg>//div[@aria-label='${Date}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:44:56.853640" elapsed="0.086938"/>
+</kw>
+<arg>${source_city}</arg>
+<arg>${destination_city}</arg>
+<arg>${travel_date}</arg>
+<status status="PASS" start="2024-03-09T11:44:54.732208" elapsed="2.208370"/>
+</kw>
+<kw name="Search Buses And Save Details To Excel" owner="KeyWords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:44:56.941578" level="INFO">Clicking button '//button[@id='search_button']'.</msg>
+<arg>${Search}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:44:56.941578" elapsed="6.481178"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.423872" level="INFO">Executing JavaScript:
+return document.readyState == 'complete'
+Without any arguments.</msg>
+<arg>return document.readyState == 'complete'</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.423872" elapsed="0.008518"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.765696" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-09T11:45:03.765696" level="FAIL">Page should have contained text 'No buses found' but did not.</msg>
+<arg>No buses found</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-03-09T11:45:03.433388" elapsed="0.333306">Page should have contained text 'No buses found' but did not.</status>
+</kw>
+<msg time="2024-03-09T11:45:03.766694" level="INFO">${condition} = False</msg>
+<var>${condition}</var>
+<arg>Page Should Contain</arg>
+<arg>No buses found</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.433388" elapsed="0.333306"/>
+</kw>
+<if>
+<branch type="IF" condition="${condition}">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>Results/Nobusesfound.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-03-09T11:45:03.766694" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-03-09T11:45:03.766694" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-03-09T11:45:03.766694" elapsed="0.000000"/>
+</if>
+<kw name="Pass Execution If" owner="BuiltIn">
+<arg>${condition}</arg>
+<arg>ELSE</arg>
+<doc>Conditionally skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.766694" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${BUSLIST}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.767691" elapsed="0.010525"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.788556" level="INFO">${elements1} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="752fcdff5669a509f0cc4a159d67b228", element="f.7DA6779D6849965D1A20A1149968C206.d.AAB2096AF2EDBC45D415935655F59AC3.e.138")&gt;, &lt;selenium.webdri...</msg>
+<var>${elements1}</var>
+<arg>${BUSES}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.778216" elapsed="0.010340"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-03-09T11:45:03.788556" level="INFO">Length is 6.</msg>
+<msg time="2024-03-09T11:45:03.788556" level="INFO">${elementsize} = 6</msg>
+<var>${elementsize}</var>
+<arg>${elements1}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.788556" elapsed="0.000000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-03-09T11:45:03.789554" level="INFO">${all} = []</msg>
+<var>${all}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.788556" elapsed="0.000998"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.810450" level="INFO">${busname} = Meena tours and travels</msg>
+<var>${busname}</var>
+<arg>(//div[@class='makeFlex']/div/p)[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.789554" elapsed="0.020896"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.827003" level="INFO">${bustype} = A/C Sleeper (2+1)</msg>
+<var>${bustype}</var>
+<arg>(//p[@class='makeFlex hrtlCenter secondaryTxt nowrapStyle'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.810450" elapsed="0.016553"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.843728" level="INFO">${departure} = 21:00</msg>
+<var>${departure}</var>
+<arg>(//span[contains(@class,'font18 latoBlack blackText appendRight4')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.827003" elapsed="0.016725"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.860291" level="INFO">${arrival} = 06:45</msg>
+<var>${arrival}</var>
+<arg>(//span[contains(@class,'font18 blackText appendRight4 latoRegular')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.843728" elapsed="0.016563"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.875777" level="INFO">${price} =  950</msg>
+<var>${price}</var>
+<arg>(//span[@id='price'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.860291" elapsed="0.015486"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.892602" level="INFO">${SeatsLeft} = 29 Seats Left
+9 Window Seats</msg>
+<var>${SeatsLeft}</var>
+<arg>(//div[@class='makeFlex hrtlCenter secondaryTxt font12'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.875777" elapsed="0.016825"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-03-09T11:45:03.893602" level="INFO">${dict} = {}</msg>
+<var>${dict}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.893602" elapsed="0.000000"/>
+</kw>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dict}</arg>
+<arg>BusName=${busname}</arg>
+<arg>BusType=${bustype}</arg>
+<arg>Departure=${departure}</arg>
+<arg>Arrival=${arrival}</arg>
+<arg>SeatsLeft=${SeatsLeft}</arg>
+<arg>Price=${price}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.893602" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${all}</arg>
+<arg>${dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.894671" elapsed="0.000000"/>
+</kw>
+<var name="${ele}">1</var>
+<status status="PASS" start="2024-03-09T11:45:03.789554" elapsed="0.105117"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.910193" level="INFO">${busname} = Al madeena Travels</msg>
+<var>${busname}</var>
+<arg>(//div[@class='makeFlex']/div/p)[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.894671" elapsed="0.015522"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.925739" level="INFO">${bustype} = A/C Sleeper (2+1)</msg>
+<var>${bustype}</var>
+<arg>(//p[@class='makeFlex hrtlCenter secondaryTxt nowrapStyle'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.911220" elapsed="0.014519"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.942255" level="INFO">${departure} = 20:00</msg>
+<var>${departure}</var>
+<arg>(//span[contains(@class,'font18 latoBlack blackText appendRight4')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.926737" elapsed="0.015518"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.958913" level="INFO">${arrival} = 06:00</msg>
+<var>${arrival}</var>
+<arg>(//span[contains(@class,'font18 blackText appendRight4 latoRegular')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.942255" elapsed="0.016658"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.975462" level="INFO">${price} =  1,100</msg>
+<var>${price}</var>
+<arg>(//span[@id='price'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.958913" elapsed="0.016549"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:03.992124" level="INFO">${SeatsLeft} = 24 Seats Left
+8 Window Seats</msg>
+<var>${SeatsLeft}</var>
+<arg>(//div[@class='makeFlex hrtlCenter secondaryTxt font12'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.975462" elapsed="0.016662"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-03-09T11:45:03.993174" level="INFO">${dict} = {}</msg>
+<var>${dict}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.993138" elapsed="0.000036"/>
+</kw>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dict}</arg>
+<arg>BusName=${busname}</arg>
+<arg>BusType=${bustype}</arg>
+<arg>Departure=${departure}</arg>
+<arg>Arrival=${arrival}</arg>
+<arg>SeatsLeft=${SeatsLeft}</arg>
+<arg>Price=${price}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.993174" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${all}</arg>
+<arg>${dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.993174" elapsed="0.000000"/>
+</kw>
+<var name="${ele}">2</var>
+<status status="PASS" start="2024-03-09T11:45:03.894671" elapsed="0.098503"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.010712" level="INFO">${busname} = Psr tours and travels</msg>
+<var>${busname}</var>
+<arg>(//div[@class='makeFlex']/div/p)[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:03.994172" elapsed="0.016540"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.029872" level="INFO">${bustype} = A/C Sleeper (2+1)</msg>
+<var>${bustype}</var>
+<arg>(//p[@class='makeFlex hrtlCenter secondaryTxt nowrapStyle'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.010712" elapsed="0.019160"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.045456" level="INFO">${departure} = 21:15</msg>
+<var>${departure}</var>
+<arg>(//span[contains(@class,'font18 latoBlack blackText appendRight4')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.029872" elapsed="0.015584"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.060887" level="INFO">${arrival} = 06:30</msg>
+<var>${arrival}</var>
+<arg>(//span[contains(@class,'font18 blackText appendRight4 latoRegular')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.045456" elapsed="0.015431"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.077355" level="INFO">${price} =  950</msg>
+<var>${price}</var>
+<arg>(//span[@id='price'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.060887" elapsed="0.016468"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.093927" level="INFO">${SeatsLeft} = 29 Seats Left
+9 Window Seats</msg>
+<var>${SeatsLeft}</var>
+<arg>(//div[@class='makeFlex hrtlCenter secondaryTxt font12'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.077355" elapsed="0.016572"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-03-09T11:45:04.093927" level="INFO">${dict} = {}</msg>
+<var>${dict}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.093927" elapsed="0.000000"/>
+</kw>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dict}</arg>
+<arg>BusName=${busname}</arg>
+<arg>BusType=${bustype}</arg>
+<arg>Departure=${departure}</arg>
+<arg>Arrival=${arrival}</arg>
+<arg>SeatsLeft=${SeatsLeft}</arg>
+<arg>Price=${price}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.093927" elapsed="0.001060"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${all}</arg>
+<arg>${dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.094987" elapsed="0.000000"/>
+</kw>
+<var name="${ele}">3</var>
+<status status="PASS" start="2024-03-09T11:45:03.994172" elapsed="0.100815"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.112532" level="INFO">${busname} = Psr tours and travels</msg>
+<var>${busname}</var>
+<arg>(//div[@class='makeFlex']/div/p)[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.094987" elapsed="0.017545"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.129066" level="INFO">${bustype} = A/C Sleeper (2+1)</msg>
+<var>${bustype}</var>
+<arg>(//p[@class='makeFlex hrtlCenter secondaryTxt nowrapStyle'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.113602" elapsed="0.015464"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.145565" level="INFO">${departure} = 22:00</msg>
+<var>${departure}</var>
+<arg>(//span[contains(@class,'font18 latoBlack blackText appendRight4')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.130139" elapsed="0.015426"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.162333" level="INFO">${arrival} = 06:45</msg>
+<var>${arrival}</var>
+<arg>(//span[contains(@class,'font18 blackText appendRight4 latoRegular')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.146580" elapsed="0.015753"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.178527" level="INFO">${price} =  950</msg>
+<var>${price}</var>
+<arg>(//span[@id='price'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.162333" elapsed="0.016194"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.195041" level="INFO">${SeatsLeft} = 23 Seats Left
+7 Window Seats</msg>
+<var>${SeatsLeft}</var>
+<arg>(//div[@class='makeFlex hrtlCenter secondaryTxt font12'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.178527" elapsed="0.016514"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-03-09T11:45:04.196039" level="INFO">${dict} = {}</msg>
+<var>${dict}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.196039" elapsed="0.000000"/>
+</kw>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dict}</arg>
+<arg>BusName=${busname}</arg>
+<arg>BusType=${bustype}</arg>
+<arg>Departure=${departure}</arg>
+<arg>Arrival=${arrival}</arg>
+<arg>SeatsLeft=${SeatsLeft}</arg>
+<arg>Price=${price}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.196039" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${all}</arg>
+<arg>${dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.196039" elapsed="0.001112"/>
+</kw>
+<var name="${ele}">4</var>
+<status status="PASS" start="2024-03-09T11:45:04.094987" elapsed="0.102164"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.213627" level="INFO">${busname} = Meenakshi Travels (RR Group)</msg>
+<var>${busname}</var>
+<arg>(//div[@class='makeFlex']/div/p)[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.197151" elapsed="0.016476"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.229575" level="INFO">${bustype} = NON A/C Sleeper (2+1)</msg>
+<var>${bustype}</var>
+<arg>(//p[@class='makeFlex hrtlCenter secondaryTxt nowrapStyle'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.213627" elapsed="0.015948"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.246286" level="INFO">${departure} = 21:45</msg>
+<var>${departure}</var>
+<arg>(//span[contains(@class,'font18 latoBlack blackText appendRight4')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.229575" elapsed="0.016711"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.262806" level="INFO">${arrival} = 07:00</msg>
+<var>${arrival}</var>
+<arg>(//span[contains(@class,'font18 blackText appendRight4 latoRegular')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.246286" elapsed="0.016520"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.278315" level="INFO">${price} =  1,000</msg>
+<var>${price}</var>
+<arg>(//span[@id='price'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.262806" elapsed="0.015509"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.297021" level="INFO">${SeatsLeft} = 18 Seats Left
+6 Window Seats</msg>
+<var>${SeatsLeft}</var>
+<arg>(//div[@class='makeFlex hrtlCenter secondaryTxt font12'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.279314" elapsed="0.017707"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-03-09T11:45:04.298019" level="INFO">${dict} = {}</msg>
+<var>${dict}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.297021" elapsed="0.000998"/>
+</kw>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dict}</arg>
+<arg>BusName=${busname}</arg>
+<arg>BusType=${bustype}</arg>
+<arg>Departure=${departure}</arg>
+<arg>Arrival=${arrival}</arg>
+<arg>SeatsLeft=${SeatsLeft}</arg>
+<arg>Price=${price}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.298019" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${all}</arg>
+<arg>${dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.298019" elapsed="0.000000"/>
+</kw>
+<var name="${ele}">5</var>
+<status status="PASS" start="2024-03-09T11:45:04.197151" elapsed="0.100868"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.343530" level="INFO">${busname} = Meenakshi Travels (RR Group)</msg>
+<var>${busname}</var>
+<arg>(//div[@class='makeFlex']/div/p)[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.299066" elapsed="0.044464"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.359991" level="INFO">${bustype} = A/C Sleeper (2+1)</msg>
+<var>${bustype}</var>
+<arg>(//p[@class='makeFlex hrtlCenter secondaryTxt nowrapStyle'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.343530" elapsed="0.016461"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.379335" level="INFO">${departure} = 21:50</msg>
+<var>${departure}</var>
+<arg>(//span[contains(@class,'font18 latoBlack blackText appendRight4')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.359991" elapsed="0.019344"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.394781" level="INFO">${arrival} = 06:40</msg>
+<var>${arrival}</var>
+<arg>(//span[contains(@class,'font18 blackText appendRight4 latoRegular')])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.379335" elapsed="0.015446"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.410320" level="INFO">${price} =  1,000</msg>
+<var>${price}</var>
+<arg>(//span[@id='price'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.394781" elapsed="0.015539"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-09T11:45:04.427867" level="INFO">${SeatsLeft} = 9 Seats Left
+3 Window Seats</msg>
+<var>${SeatsLeft}</var>
+<arg>(//div[@class='makeFlex hrtlCenter secondaryTxt font12'])[${ele}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.410320" elapsed="0.017547"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-03-09T11:45:04.427867" level="INFO">${dict} = {}</msg>
+<var>${dict}</var>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.427867" elapsed="0.000000"/>
+</kw>
+<kw name="Set To Dictionary" owner="Collections">
+<arg>${dict}</arg>
+<arg>BusName=${busname}</arg>
+<arg>BusType=${bustype}</arg>
+<arg>Departure=${departure}</arg>
+<arg>Arrival=${arrival}</arg>
+<arg>SeatsLeft=${SeatsLeft}</arg>
+<arg>Price=${price}</arg>
+<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.428928" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${all}</arg>
+<arg>${dict}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-03-09T11:45:04.428928" elapsed="0.000000"/>
+</kw>
+<var name="${ele}">6</var>
+<status status="PASS" start="2024-03-09T11:45:04.299066" elapsed="0.129862"/>
+</iter>
+<var>${ele}</var>
+<value>1</value>
+<value>${elementsize}+1</value>
+<status status="PASS" start="2024-03-09T11:45:03.789554" elapsed="0.639374"/>
+</for>
+<kw name="Pd Excel File" owner="make_excel">
+<arg>Reports/Results/Bus_List.xlsx</arg>
+<arg>${all}</arg>
+<status status="PASS" start="2024-03-09T11:45:04.429926" elapsed="0.209729"/>
+</kw>
+<status status="PASS" start="2024-03-09T11:44:56.941578" elapsed="7.698077"/>
+</kw>
+<status status="PASS" start="2024-03-09T11:44:41.113395" elapsed="23.527259"/>
+</test>
+<status status="PASS" start="2024-03-09T11:44:40.507215" elapsed="24.134497"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="BusesPageTest">BusesPageTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
